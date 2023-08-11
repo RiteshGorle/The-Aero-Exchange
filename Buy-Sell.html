@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--------------------------------------------------->
+<!--------------- TITLE OF WEBSITE PAGE ------------->
+<!--------------------------------------------------->
+<title>The Aero Exchange</title>
+
+<!--------------------------------------------------->
+<!--------------------- META SEO WORK --------------->
+<!--------------------------------------------------->
+    <meta charset="utf-8">
+  <meta name="description" content="this website is all about Aircraft Cabin Component">
+  <meta name="keywords" content="It's an online trading platform that serves as a forum between authenticated aircraft manufacturers, vendors, aircraft cabin component sellers with the potential or existing buyers/customers">
+  <meta name="author" content="Ritesh Gorle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon"  type="image/x-icon" href="favicon.png">  
+
+
+<!--------------------------------------------------->
+<!--------------------- BOOTSTRAP 5 ----------------->
+<!--------------------------------------------------->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--------------------------------------------------->
+<!-----------------Font Awesome Icon ---------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--------------------------------------------------->
+<!------------------ Font Awesome Kit --------------->
+<!--------------------------------------------------->
+<script src="https://kit.fontawesome.com/92c23805dd.js" crossorigin="anonymous"></script>
+
+<!--------------------------------------------------->
+<!----------------------- CSS ----------------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+<style type="text/css">
+
+
+/****************** Gallery ***************************/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+
+/****************** Button BUY SEll ***************************/
+.btn99 {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn99:hover {opacity: 0.6}
+
+
+
+
+/****************** Form Prodcuts Listings ***************************/
+
+.container111 {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+
+
+/****************** Form Payment ***************************/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout  */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+</style>
+
+</head>
+
+<body  >
+
+
+<!--%%%%%%%%%%%%%%=>  WebSite Name: Aircraft Cabin Component Trading Platform <=%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%=>       Made by: Ritesh Gorle                              <=%%%%%%%%%%%%%%%%%--> 
+<!--%%%%%%%%%%%%%%=>       Created: August 2023                               <=%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%=>       Content: Aircraft Cabin Component                  <=%%%%%%%%%%%%%%%%%-->
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Table Of Contents:
+
+00 Website Title
+SECTION 01: LOGO AND NAVIGATION
+SECTION 02: IMAGE GALLERY & PAYMENT
+SECTION 06: FOOTER
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!---------------------------= Website Title =--------------------------------->
+<div >
+  
+<h1 align="center" style="font-size:9vw; color:red">The Aero Exchange</h1>
+
+</div>
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!---------------------------= SECTION 01: LOGO AND NAVIGATION START =-------------------------------->
+<!--------------------------------===============================------------------------------------->
+<header class="container-fluid">
+
+<nav class="navbar navbar-expand-md  navbar-dark">
+  
+  <!---------------------------= LOGO =--------------------------------->
+   <a class="navbar-brand" href="index.html">
+
+    <div id="my-content">
+    <img src="logo1.png" alt="Logo" style="width:160px;">
+    <img  src="logo1.png" alt="Logo" style="width:160px;" >
+    <img  src="logo1.png" alt="Logo" style="width:160px;" >
+    </div>
+
+    <img id="why-content" src="logo1.png" alt="Logo" style="width:160px;">
+
+   </a> 
+
+<!---------------------------= NAVIGATION MENU =---------------------------------> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#product">PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="About.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="contact.html">CONTACT US</a>
+        </li>    
+      </ul>
+  </div>  
+</nav>
+</header> 
+<!--------------------------------===============================------------------------------------->
+<!---------------------------= SECTION 01: LOGO AND NAVIGATION END=----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!---------------------------= SECTION 02: IMAGE GALLERY & PAYMENT =---------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<section class="text-white">
+
+<h2 style="font-size:4vw; color:red" align="center">Product Listings</h2>
+
+
+<!---------------------------= IMAGE GALLERY =----------------------------------->
+
+<!---------------------------= IMAGE 1 =----------------------------------->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="light.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Cabin Lighting System</div>
+    <div align="center"><button type="button" data-toggle="modal" data-target="#myModal" class="btn99">Buy/Sell</button></div>
+  </div>
+</div>
+
+<!---------------------------= IMAGE 2 =----------------------------------->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="seat.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Premium Seating</div>
+    <div align="center"><button type="button" data-toggle="modal" data-target="#myModal" class="btn99">Buy/Sell</button></div>
+  </div>
+</div>
+
+<!---------------------------= IMAGE 3 =----------------------------------->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="tv.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">In-Flight Entertainment</div>
+    <div align="center"><button type="button" data-toggle="modal" data-target="#myModal" class="btn99">Buy/Sell</button></div>
+  </div>
+</div>
+
+<!---------------------------= IMAGE 4 =----------------------------------->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="gallery.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Galley Equipment</div>
+    <div align="center"><button type="button" data-toggle="modal" data-target="#myModal" class="btn99">Buy/Sell</button></div>
+  </div>
+</div>
+
+
+<!---------------------------= CLEARFIX =----------------------------------->
+<div class="clearfix"></div>
+ 
+ <br>
+
+ <!---------------------------= PARAGRAPH =----------------------------------->
+<div style="padding:6px;">
+  <p>Aircraft cabin components are an essential part of any aircraft, and the demand for these components is constantly growing. A trading platform for aircraft cabin components can help buyers and sellers connect with each other and find the components they need at a competitive price.</p>
+</div>
+
+
+
+
+<!---------------------------= BUY/SELL PRODUCT LISTING, CONTACT AND PAYMENT FORM =---------------------------->
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title text-dark">Product Listings</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="container">
+
+<!---------------------------= BUY/SELL PRODUCT LISTING FORM =----------------------------------->   
+    <div class="form text-warning">
+      <form action="Buy-Sell.html" method="post" autocomplete="off">
+        <label>
+          <span class="location">Product Location</span>
+          <select name="location">
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+          </select>
+        </label>
+        <label>
+          <span class="quantity">Product Quantity</span>
+          <input type="number" name="quantity" min="1">
+        </label>
+        <label>
+          <span class="price">Market Price</span>
+          <input type="number" name="price" step="0.01">
+        </label>
+        <label>
+          <span class="estimated_shipping_date">Estimated Shipping Date</span>
+          <input type="date" name="estimated_shipping_date">
+        </label>
+        <label>
+          <span class="seller">Seller</span>
+          <select name="seller">
+            <option value="Amazon">Amazon</option>
+            <option value="eBay">eBay</option>
+            <option value="Walmart">Walmart</option>
+            <option value="Target">Target</option>
+            <option value="Best Buy">Best Buy</option>
+          </select>
+        </label>
+       
+      </form>
+    </div>
+  </div>
+
+<!---------------------------= CONTACT FORM =----------------------------------->
+<div class="row">
+  <div class="col-75">
+    <div class="container text-warning">
+      <form action="Buy-Sell.html" autocomplete="off">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+
+<!---------------------------= PAYMENT FORM =----------------------------------->
+<div class="col-50 text-warning" onautocomplete="off">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--------------------------------===============================------------------------------------->
+<!---------------------------= SECTION 02: IMAGE GALLERY & PAYMENT =---------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!---------------------------= SECTION 03: FOOTER START =--------------------------------->
+<!--------------------------------===============================------------------------------------->
+<!-- Footer -->
+  <section id="footer">
+    <div class="container-fluid">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <img src="logo.png" alt="logo" width="160px">
+          <br>
+          <img  src="logo3.png" alt="logo3" height="180px" width="130px">
+          
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="About.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+            <li><a href="About.html"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Featured Products</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Lighting </a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Premium </a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Entertainment</a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Galley</a></li>
+            <li><a href="Buy-Sell.html" ><i class="fa fa-angle-double-right"></i>Interior</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="index.html" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          
+          <p class="h6">&copy All right Reversed 2023.<a class="text-green ml-2" href="index.html" target="_blank">The Aero Exchange</a></p>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </section>
+  <!-- Footer -->
+
+
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------------=  SECTION 03: FOOTER END  =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+    
+</body>
+</html>

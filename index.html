@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--------------------------------------------------->
+<!--------------- TITLE OF WEBSITE PAGE ------------->
+<!--------------------------------------------------->
+<title>The Aero Exchange</title>
+
+<!--------------------------------------------------->
+<!--------------------- META SEO WORK --------------->
+<!--------------------------------------------------->
+    <meta charset="utf-8">
+  <meta name="description" content="this website is all about Aircraft Cabin Component">
+  <meta name="keywords" content="It's an online trading platform that serves as a forum between authenticated aircraft manufacturers, vendors, aircraft cabin component sellers with the potential or existing buyers/customers">
+  <meta name="author" content="Ritesh Gorle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon"  type="image/x-icon" href="favicon.png">  
+
+
+<!--------------------------------------------------->
+<!--------------------- BOOTSTRAP 5 ----------------->
+<!--------------------------------------------------->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--------------------------------------------------->
+<!-----------------Font Awesome Icon ---------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--------------------------------------------------->
+<!------------------ Font Awesome Kit --------------->
+<!--------------------------------------------------->
+<script src="https://kit.fontawesome.com/92c23805dd.js" crossorigin="anonymous"></script>
+
+<!--------------------------------------------------->
+<!----------------------- CSS ----------------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body  >
+
+
+<!--%%%%%%%%%%%%%%=>      WebSite Name: The Aero Exchange                     <=%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%=>       Made by: Ritesh Gorle                              <=%%%%%%%%%%%%%%%%%--> 
+<!--%%%%%%%%%%%%%%=>       Created: August 2023                               <=%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%=>       Content: Aircraft Cabin Component                  <=%%%%%%%%%%%%%%%%%-->
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Table Of Contents:
+
+00 - Website Title
+SECTION 01: LOGO AND NAVIGATION 
+SECTION 02: BUY SELL SECTION
+SECTION 03: PRODUCTS
+SECTION 04: SERVICES
+SECTION 05: TESTIMONIALS
+SECTION 06: FOOTER
+
+JAVASCRIPT
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%&&&&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!---------------------------= WEBSITE TITLE =--------------------------------->
+<div class="container">
+  
+<h1 align="center" style="font-size:9vw; color:red">The Aero Exchange</h1>
+
+</div>
+
+
+<!--------------------------------===============================------------------------------------->
+<!---------------------------= SECTION 01: LOGO AND NAVIGATION START =-------------------------------->
+<!--------------------------------===============================------------------------------------->
+<header class="container-fluid">
+
+<nav class="navbar navbar-expand-md  navbar-dark">
+  
+  <!---------------------------= LOGO =--------------------------------->
+   <a class="navbar-brand" href="index.html">
+
+    <div id="my-content">
+    <img src="logo1.png" alt="Logo" style="width:160px;">
+    <img  src="logo1.png" alt="Logo" style="width:160px;" >
+    <img  src="logo1.png" alt="Logo" style="width:160px;" >
+    </div>
+
+    <img id="why-content" src="logo1.png" alt="Logo" style="width:160px;">
+
+   </a> 
+
+<!---------------------------= NAVIGATION MENU =---------------------------------> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#product">PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="About.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="contact.html">CONTACT US</a>
+        </li>    
+      </ul>
+  </div>  
+</nav>
+</header> 
+<br>
+<!--------------------------------===============================------------------------------------->
+<!---------------------------= SECTION 01: LOGO AND NAVIGATION END=----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!------------------------------= SECTION 02: BUY SELL SECTION START =-------------------------------->
+<!--------------------------------===============================------------------------------------->
+  
+<section>
+
+<!-- Two columns: 50% width on medium and up-->
+<div class="row container-fluid">
+
+<div class="col-md" align="center">
+
+<!--------------------------------= BUY BUTTON =------------------------------------>
+<button class="button-buy" onclick="document.getElementById('id01').style.display='block'"><span>Buy </span></button>
+
+
+<!--------------------------------= MODAL =------------------------------------>
+<div id="id01" class="modal77">
+
+
+  <form class="modal-content77 animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="person.png" alt="Avatar" class="avatar" >
+    </div>
+
+<!--------------------------------= LOG IN FORM =------------------------------------>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" autocomplete="off" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" autocomplete="off" placeholder="Enter Password" name="psw" required>
+        
+      <button id="log" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button  type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span> <br>  <br>
+<marquee width="60%" direction="left" height="100px" scrollamount="9">
+Click "Skip" to instantly access the products/Components without requiring a login.
+</marquee>
+      <a href="Buy-Sell.html"><button type="button"   class="btn btn-secondary text-white">Skip</button></a>
+    </div>
+
+  </form>
+  
+</div>
+</div>
+
+
+<!--------------------------------= BUY BUTTON =------------------------------------>
+<div class="col-md" align="center">
+<button class="button-Sell" class="button-buy" onclick="document.getElementById('id01').style.display='block'"><span>Sell </span></button>
+</div>
+
+
+</div>
+</section>
+<br><br>
+<!--------------------------------===============================------------------------------------->
+<!-------------------------------= SECTION 02: BUY SELL SECTION END=---------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!----------------------------------= SECTION 03: PRODUCTS START =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+<div class="products-section container-fluid " id="product">
+
+  <!--------------------------------= HEADING  =------------------------------------>
+    <h2 id="heading2" class="products-heading">Featured Products</h2>
+    <div class="products-container">
+
+<!--------------------------------= PRODUCT 1 =------------------------------------>
+      <div class="product-card">
+        <img class="product-image" src="light.jpg" alt="Product 1">
+        <div class="product-title">Cabin Lighting System</div>
+       <div class="product-description">State-of-the-art LED cabin lighting system for enhanced passenger experience.</div>
+        <br>
+<div  align="center">
+<button class="button-Sell"><span>Buy/Sell </span></button>
+</div>
+</div>
+
+<!--------------------------------= PRODUCT 2 =------------------------------------>
+      <div class="product-card">
+        <img class="product-image" src="seat.jpg" alt="Product 2">
+        <div class="product-title">Premium Seating</div>
+        <div class="product-description">Luxurious premium seating options designed for maximum comfort and style.</div>
+<br>
+<div  align="center">
+<button class="button-Sell"><span>Buy/Sell </span></button>
+</div>
+</div>
+
+
+<!--------------------------------= PRODUCT 3 =------------------------------------>
+<div class="product-card">
+        <img class="product-image" src="tv.jpg" alt="Product 3">
+        <div class="product-title">In-Flight Entertainment</div>
+        <div class="product-description">Cutting-edge in-flight entertainment systems to engage and entertain passengers.</div>
+        <br>
+<div  align="center">
+<button class="button-Sell"><span>Buy/Sell </span></button>
+</div>
+</div>
+
+
+<!--------------------------------= PRODUCT 4 =------------------------------------>
+      <div class="product-card">
+        <img class="product-image" src="gallery.jpg" alt="Product 4">
+        <div class="product-title">Galley Equipment</div>
+        <div class="product-description">Efficient and durable galley equipment for seamless onboard service.</div>
+        <br>
+<div  align="center">
+<button class="button-Sell"><span>Buy/Sell </span></button>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<!--------------------------------===============================------------------------------------->
+<!----------------------------------= SECTION 03: PRODUCTS END =-------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------= SECTION 04: SERVICES START =-------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<div class="services-section container-fluid">
+
+<!--------------------------------= HEADING =------------------------------------>
+    <h2 id="heading2" class="services-heading">Our Services</h2>
+    <div class="services-container">
+
+<!--------------------------------= SERVICE 1 =------------------------------------>
+      <div class="service-card">
+        <div class="service-icon">🛍️</div>
+        <div class="service-title">Component Listings</div>
+        <div class="service-description">List your aircraft cabin components for sale or trade in our specialized marketplace.</div>
+      </div>
+
+<!--------------------------------= SERVICE 2 =------------------------------------>
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <div class="service-title">Secure Transactions</div>
+        <div class="service-description">We ensure safe and transparent transactions between buyers and sellers.</div>
+      </div>
+
+<!--------------------------------= SERVICE 3 =------------------------------------>
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <div class="service-title">Global Reach</div>
+        <div class="service-description">Connect with potential partners and customers from around the world.</div>
+      </div>
+
+<!--------------------------------= SERVICE 4 =------------------------------------>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <div class="service-title">Advanced Search</div>
+        <div class="service-description">Effortlessly find the aircraft cabin components you need with our advanced search filters.</div>
+      </div>
+
+
+    </div>
+  </div>
+<br> 
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------= SECTION 04: SERVICES END =-------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------= SECTION 05: TESTIMONIALS START =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<div class="testimonials-section container-fluid">
+<!--------------------------------= HEADING =------------------------------------>
+    <h2 id="heading2" class="testimonials-heading">Testimonials</h2>
+    <div class="testimonials-container">
+
+<!--------------------------------= TESTIMONIALS 1 =------------------------------------>
+      <div class="testimonial-card">
+        <img class="testimonial-avatar" src="testi.jpg" alt="Testimonial Avatar">
+        <div class="testimonial-name">Suresh Kumar</div>
+        <div class="testimonial-company">Tech Airlines</div>
+        <div class="testimonial-quote">"The platform provided by Aircraft Components Trading has transformed the way we source and trade cabin components. It's efficient, secure, and has greatly improved our operations."</div>
+      </div>
+
+<!--------------------------------= TESTIMONIALS 2 =------------------------------------>
+      <div class="testimonial-card">
+        <img class="testimonial-avatar" src="testi.jpg" alt="Testimonial Avatar">
+        <div class="testimonial-name">Ramesh Kumar</div>
+        <div class="testimonial-company">Brand Aviation</div>
+        <div class="testimonial-quote">"As a supplier of aircraft cabin components, I've found the trading platform to be an invaluable resource for connecting with buyers and expanding our market reach. Highly recommended!"</div>
+      </div>
+
+ <!--------------------------------= TESTIMONIALS 3 =------------------------------------>     
+      <div class="testimonial-card">
+        <img class="testimonial-avatar" src="testi.jpg" alt="Testimonial Avatar">
+        <div class="testimonial-name">Jitesh Kumar</div>
+        <div class="testimonial-company">High Space</div>
+        <div class="testimonial-quote">"Aircraft Components Trading has simplified the trading process for cabin components. The user-friendly interface and comprehensive features make it a game-changer for the industry."</div>
+      </div>
+    </div>
+  </div>
+<br>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------= SECTION 05: TESTIMONIALS END =------------------------------------>
+<!--------------------------------===============================------------------------------------->
+
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!----------------------------------= SECTION 06: FOOTER START =-------------------------------------->
+<!--------------------------------===============================------------------------------------->
+<!-- Footer -->
+  <section id="footer">
+    <div class="container">
+
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <img src="logo.png" alt="logo" width="160px">
+          <br>
+          <img  src="logo3.png" alt="logo3" height="180px" width="130px">
+          </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="About.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+            <li><a href="About.html"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Featured Products</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Lighting </a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Premium </a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Entertainment</a></li>
+            <li><a href="Buy-Sell.html"><i class="fa fa-angle-double-right"></i>Galley</a></li>
+            <li><a href="Buy-Sell.html" ><i class="fa fa-angle-double-right"></i>Interior</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="index.html"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="index.html" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          
+          <p class="h6">&copy All right Reversed 2023.<a class="text-green ml-2" href="index.html" target="_blank">The Aero Exchange</a></p>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </section>
+  <!-- Footer -->
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!---------------------------------=  SECTION 06: FOOTER END  =--------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------------------=  JAVASCRIPT  =------------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+</body>
+</html>
